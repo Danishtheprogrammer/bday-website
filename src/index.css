@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* Background gradient dibuang dari sini, dialihkan ke Layout.jsx */
+    background-color: #f8fafc;
+    color: #4a4e69;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom soft glow effects */
+.glow-text {
+  text-shadow: 0 0 15px rgba(244, 114, 182, 0.4), 0 0 30px rgba(251, 113, 133, 0.2);
+}
+
+.glow-card {
+  box-shadow: 0 20px 50px rgba(244, 114, 182, 0.15), 
+              0 0 20px rgba(255, 255, 255, 0.8) inset;
+}
+
+/* Smooth input styling for mobile browsers */
+input[type="date"], input[type="time"] {
+  min-height: 48px;
+}
